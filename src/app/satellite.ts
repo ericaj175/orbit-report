@@ -9,11 +9,22 @@ launchDate: string;
 
 
 
-constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean){
+constructor (name: string, type: string, launchDate: string, orbitType: string, operational: boolean){
     this.name = name;
     this.type = type;
     this.launchDate = launchDate;
     this.orbitType = orbitType;
     this.operational =  operational;
 }
-}
+
+//let satelliteType = "Space Debris";
+shouldShowWarning(): boolean {
+
+
+  if(this.type==="Space Debris") {
+      return true;
+  }
+    else {
+    return false;
+  }
+}}

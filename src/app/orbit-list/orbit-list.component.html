@@ -1,9 +1,10 @@
 <p>orbit-list works!</p>
+
 <h3>Orbit Report</h3>
 <table>
    <tr class="header-row">
-      <th class="sortable">Name</th>
-      <th class="sortable">Type</th>
+      <th class="sortable">Name</th><a (click)="sort('name')"></a>
+      <th class="sortable">Type</th> <a (click)="sort('type')"></a>
       <th>Operational</th>
       <th>Orbit Type</th>
       <th>Launch Date</th>
@@ -14,7 +15,7 @@
        <td [class.warning]='satellite.shouldShowWarning()'>{{satellite.type}}</td>
        <td> {{satellite.operational}}</td>
        <td> {{satellite.orbitType}}</td>
-       <td> {{satellite.launchData}}</td>
+       <td> {{satellite.launchDate}}</td>
 </tr>
-   
+  
 </table>
