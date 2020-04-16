@@ -1,13 +1,13 @@
-<p>orbit-list works!</p>
-
 <h3>Orbit Report</h3>
 <table>
    <tr class="header-row">
-      <th class="sortable">Name</th><a (click)="sort('name')"></a>
-      <th class="sortable">Type</th> <a (click)="sort('type')"></a>
+      <th class="sortable">Name</th>
+      <th class="sortable">Type</th>
       <th>Operational</th>
       <th>Orbit Type</th>
       <th>Launch Date</th>
+      <a (click)="sort('type')"></a>
+      <a (click)="sort('name')"></a>
    </tr>
 
    <tr *ngFor= "let satellite of satellites"> 
